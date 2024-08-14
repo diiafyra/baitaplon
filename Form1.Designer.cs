@@ -17,7 +17,7 @@
 
         private void InitializeComponent()
         {
-            Guna.UI2.AnimatorNS.Animation animation5 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation11 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.transition = new Guna.UI2.WinForms.Guna2Transition();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -37,22 +37,22 @@
             // 
             this.transition.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
             this.transition.Cursor = null;
-            animation5.AnimateOnlyDifferences = true;
-            animation5.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.BlindCoeff")));
-            animation5.LeafCoeff = 0F;
-            animation5.MaxTime = 1F;
-            animation5.MinTime = 0F;
-            animation5.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicCoeff")));
-            animation5.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicShift")));
-            animation5.MosaicSize = 0;
-            animation5.Padding = new System.Windows.Forms.Padding(0);
-            animation5.RotateCoeff = 0F;
-            animation5.RotateLimit = 0F;
-            animation5.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.ScaleCoeff")));
-            animation5.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.SlideCoeff")));
-            animation5.TimeCoeff = 0F;
-            animation5.TransparencyCoeff = 0F;
-            this.transition.DefaultAnimation = animation5;
+            animation11.AnimateOnlyDifferences = true;
+            animation11.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.BlindCoeff")));
+            animation11.LeafCoeff = 0F;
+            animation11.MaxTime = 1F;
+            animation11.MinTime = 0F;
+            animation11.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.MosaicCoeff")));
+            animation11.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation11.MosaicShift")));
+            animation11.MosaicSize = 0;
+            animation11.Padding = new System.Windows.Forms.Padding(0);
+            animation11.RotateCoeff = 0F;
+            animation11.RotateLimit = 0F;
+            animation11.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.ScaleCoeff")));
+            animation11.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.SlideCoeff")));
+            animation11.TimeCoeff = 0F;
+            animation11.TransparencyCoeff = 0F;
+            this.transition.DefaultAnimation = animation11;
             this.transition.Interval = 1000;
             // 
             // panel2
@@ -68,7 +68,7 @@
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.DimGray;
+            this.guna2Panel1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Controls.Add(this.spBtn);
             this.guna2Panel1.Controls.Add(this.nccBtn);
@@ -94,10 +94,10 @@
             this.spBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.spBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.spBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.spBtn.FillColor2 = System.Drawing.Color.DimGray;
+            this.spBtn.FillColor2 = System.Drawing.Color.DarkSlateGray;
             this.spBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.spBtn.ForeColor = System.Drawing.Color.White;
-            this.spBtn.Location = new System.Drawing.Point(0, 216);
+            this.spBtn.Location = new System.Drawing.Point(0, 235);
             this.spBtn.Name = "spBtn";
             this.spBtn.Size = new System.Drawing.Size(178, 55);
             this.spBtn.TabIndex = 2;
@@ -119,10 +119,10 @@
             this.nccBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.nccBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.nccBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.nccBtn.FillColor2 = System.Drawing.Color.DimGray;
+            this.nccBtn.FillColor2 = System.Drawing.Color.DarkSlateGray;
             this.nccBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.nccBtn.ForeColor = System.Drawing.Color.White;
-            this.nccBtn.Location = new System.Drawing.Point(0, 159);
+            this.nccBtn.Location = new System.Drawing.Point(0, 178);
             this.nccBtn.Name = "nccBtn";
             this.nccBtn.Size = new System.Drawing.Size(178, 52);
             this.nccBtn.TabIndex = 1;
@@ -161,7 +161,8 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DimGray;
+            this.panel1.AllowDrop = true;
+            this.panel1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.panel1.Controls.Add(this.label1);
             this.transition.SetDecoration(this.panel1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;

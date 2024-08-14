@@ -47,7 +47,7 @@ namespace baitaplon
         private void Form1_Load(object sender, EventArgs e)
         {
             loadPage(new PAGE1());
-            label1.Text = "NHA CUNG CAP";
+            label1.Text = "NHÀ CUNG CẤP";
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -77,7 +77,7 @@ namespace baitaplon
         private void spBtn_Click_1(object sender, EventArgs e)
         {
             loadPage(new PAGE2());
-            label1.Text = "SAN PHAM CUNG CAP";
+            label1.Text = "SẢN PHẨM CUNG CẤP";
         }
 
         private void spBtn_MouseEnter(object sender, EventArgs e)
@@ -95,7 +95,7 @@ namespace baitaplon
         private void nccBtn_Click(object sender, EventArgs e)
         {
             loadPage(new PAGE1());
-            label1.Text = "NHA CUNG CAP";
+            label1.Text = "NHÀ CUNG CẤP";
         }
     }
 }

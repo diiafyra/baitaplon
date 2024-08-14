@@ -203,7 +203,7 @@ namespace baitaplon
             float gia = -1;
             try
             {
-                gia = float.Parse(textBox2.Text);
+                gia = float.Parse(textBox3.Text);
             }
             catch (Exception ex)
             {
@@ -237,7 +237,7 @@ namespace baitaplon
             float gia = -1;
             try
             {
-                gia = float.Parse(textBox2.Text);
+                gia = float.Parse(textBox3.Text);
             }
             catch (Exception ex)
             {
