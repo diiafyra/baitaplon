@@ -24,7 +24,7 @@ namespace baitaplon
         }
 
         // Hàm load dữ liệu từ SQL cho vào datagridview 
-        static string myLap3 = "Data Source=localhost;Initial Catalog=QLNCC;Persist Security Info=True;User ID=he;Password = 1234";
+        static string myLap3 = "Data Source=localhost;Initial Catalog=QLNCC;trusted_connection=true";
         private void LoadData()
         {
             string txtSql = "SELECT * FROM SanPhams";
