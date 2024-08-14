@@ -26,7 +26,7 @@ namespace baitaplon
             {
                 //cur.Dispose();
                 cur.Close();
-                panel2.Controls.Remove(cur);
+                panel_pageHolder.Controls.Remove(cur);
             }
             cur = form;
             form.TopLevel = false;
@@ -37,8 +37,8 @@ namespace baitaplon
                 page1.ParentForm = this; 
             }
 
-            panel2.Controls.Add(form);
-            panel2.Tag = form;
+            panel_pageHolder.Controls.Add(form);
+            panel_pageHolder.Tag = form;
             //form.BringToFront();
             form.Show();
 
@@ -47,7 +47,7 @@ namespace baitaplon
         private void Form1_Load(object sender, EventArgs e)
         {
             loadPage(new PAGE1());
-            label1.Text = "NHÀ CUNG CẤP";
+            label_tittlePage.Text = "NHÀ CUNG CẤP";
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -77,25 +77,25 @@ namespace baitaplon
         private void spBtn_Click_1(object sender, EventArgs e)
         {
             loadPage(new PAGE2());
-            label1.Text = "SẢN PHẨM CUNG CẤP";
+            label_tittlePage.Text = "SẢN PHẨM CUNG CẤP";
         }
 
         private void spBtn_MouseEnter(object sender, EventArgs e)
         {
-            guna2Panel1.Width = 130;
-            transition.ShowSync(guna2Panel1);
+            Gpanel_slideBar.Width = 130;
+            transition.ShowSync(Gpanel_slideBar);
         }
 
         private void spBtn_MouseLeave(object sender, EventArgs e)
         {
-            guna2Panel1.Width = 20;
-            transition.ShowSync(guna2Panel1);
+            Gpanel_slideBar.Width = 20;
+            transition.ShowSync(Gpanel_slideBar);
         }
 
         private void nccBtn_Click(object sender, EventArgs e)
         {
             loadPage(new PAGE1());
-            label1.Text = "NHÀ CUNG CẤP";
+            label_tittlePage.Text = "NHÀ CUNG CẤP";
         }
     }
 }

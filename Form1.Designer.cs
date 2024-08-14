@@ -17,70 +17,81 @@
 
         private void InitializeComponent()
         {
-            Guna.UI2.AnimatorNS.Animation animation11 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation3 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.transition = new Guna.UI2.WinForms.Guna2Transition();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.panel_pageHolder = new System.Windows.Forms.Panel();
+            this.Gpanel_slideBar = new Guna.UI2.WinForms.Guna2Panel();
+            this.label_sign = new System.Windows.Forms.Label();
             this.spBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.nccBtn = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.gImage_SignIcon = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.label_tittlePage = new System.Windows.Forms.Label();
+            this.panel_tittle = new System.Windows.Forms.Panel();
+            this.Gpanel_slideBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gImage_SignIcon)).BeginInit();
+            this.panel_tittle.SuspendLayout();
             this.SuspendLayout();
             // 
             // transition
             // 
             this.transition.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
             this.transition.Cursor = null;
-            animation11.AnimateOnlyDifferences = true;
-            animation11.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.BlindCoeff")));
-            animation11.LeafCoeff = 0F;
-            animation11.MaxTime = 1F;
-            animation11.MinTime = 0F;
-            animation11.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.MosaicCoeff")));
-            animation11.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation11.MosaicShift")));
-            animation11.MosaicSize = 0;
-            animation11.Padding = new System.Windows.Forms.Padding(0);
-            animation11.RotateCoeff = 0F;
-            animation11.RotateLimit = 0F;
-            animation11.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.ScaleCoeff")));
-            animation11.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.SlideCoeff")));
-            animation11.TimeCoeff = 0F;
-            animation11.TransparencyCoeff = 0F;
-            this.transition.DefaultAnimation = animation11;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(0);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 0F;
+            this.transition.DefaultAnimation = animation3;
             this.transition.Interval = 1000;
             // 
-            // panel2
+            // panel_pageHolder
             // 
-            this.panel2.AutoScroll = true;
-            this.panel2.BackColor = System.Drawing.Color.Silver;
-            this.transition.SetDecoration(this.panel2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(180, 57);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(749, 442);
-            this.panel2.TabIndex = 2;
+            this.panel_pageHolder.AutoScroll = true;
+            this.panel_pageHolder.BackColor = System.Drawing.Color.Silver;
+            this.transition.SetDecoration(this.panel_pageHolder, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panel_pageHolder.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_pageHolder.Location = new System.Drawing.Point(180, 57);
+            this.panel_pageHolder.Name = "panel_pageHolder";
+            this.panel_pageHolder.Size = new System.Drawing.Size(749, 442);
+            this.panel_pageHolder.TabIndex = 2;
             // 
-            // guna2Panel1
+            // Gpanel_slideBar
             // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.guna2Panel1.Controls.Add(this.label2);
-            this.guna2Panel1.Controls.Add(this.spBtn);
-            this.guna2Panel1.Controls.Add(this.nccBtn);
-            this.guna2Panel1.Controls.Add(this.guna2CirclePictureBox1);
-            this.transition.SetDecoration(this.guna2Panel1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(180, 499);
-            this.guna2Panel1.TabIndex = 4;
-            this.guna2Panel1.MouseEnter += new System.EventHandler(this.spBtn_MouseEnter);
-            this.guna2Panel1.MouseLeave += new System.EventHandler(this.spBtn_MouseLeave);
+            this.Gpanel_slideBar.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Gpanel_slideBar.Controls.Add(this.label_sign);
+            this.Gpanel_slideBar.Controls.Add(this.spBtn);
+            this.Gpanel_slideBar.Controls.Add(this.nccBtn);
+            this.Gpanel_slideBar.Controls.Add(this.gImage_SignIcon);
+            this.transition.SetDecoration(this.Gpanel_slideBar, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Gpanel_slideBar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Gpanel_slideBar.Location = new System.Drawing.Point(0, 0);
+            this.Gpanel_slideBar.Name = "Gpanel_slideBar";
+            this.Gpanel_slideBar.Size = new System.Drawing.Size(180, 499);
+            this.Gpanel_slideBar.TabIndex = 4;
+            this.Gpanel_slideBar.MouseEnter += new System.EventHandler(this.spBtn_MouseEnter);
+            this.Gpanel_slideBar.MouseLeave += new System.EventHandler(this.spBtn_MouseLeave);
+            // 
+            // label_sign
+            // 
+            this.label_sign.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_sign.AutoSize = true;
+            this.transition.SetDecoration(this.label_sign, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.label_sign.Location = new System.Drawing.Point(12, 465);
+            this.label_sign.Name = "label_sign";
+            this.label_sign.Size = new System.Drawing.Size(130, 16);
+            this.label_sign.TabIndex = 3;
+            this.label_sign.Text = "#develop_by_giatoc";
             // 
             // spBtn
             // 
@@ -133,54 +144,43 @@
             this.nccBtn.MouseEnter += new System.EventHandler(this.spBtn_MouseEnter);
             this.nccBtn.MouseLeave += new System.EventHandler(this.spBtn_MouseLeave);
             // 
-            // guna2CirclePictureBox1
+            // gImage_SignIcon
             // 
-            this.transition.SetDecoration(this.guna2CirclePictureBox1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(27, 28);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(132, 125);
-            this.guna2CirclePictureBox1.TabIndex = 0;
-            this.guna2CirclePictureBox1.TabStop = false;
-            this.guna2CirclePictureBox1.MouseEnter += new System.EventHandler(this.spBtn_MouseEnter);
-            this.guna2CirclePictureBox1.MouseLeave += new System.EventHandler(this.spBtn_MouseLeave);
+            this.transition.SetDecoration(this.gImage_SignIcon, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.gImage_SignIcon.Image = ((System.Drawing.Image)(resources.GetObject("gImage_SignIcon.Image")));
+            this.gImage_SignIcon.ImageRotate = 0F;
+            this.gImage_SignIcon.Location = new System.Drawing.Point(27, 28);
+            this.gImage_SignIcon.Name = "gImage_SignIcon";
+            this.gImage_SignIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.gImage_SignIcon.Size = new System.Drawing.Size(132, 125);
+            this.gImage_SignIcon.TabIndex = 0;
+            this.gImage_SignIcon.TabStop = false;
+            this.gImage_SignIcon.MouseEnter += new System.EventHandler(this.spBtn_MouseEnter);
+            this.gImage_SignIcon.MouseLeave += new System.EventHandler(this.spBtn_MouseLeave);
             // 
-            // label1
+            // label_tittlePage
             // 
-            this.label1.AutoSize = true;
-            this.transition.SetDecoration(this.label1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.label1.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label1.Location = new System.Drawing.Point(11, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(175, 31);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "NHÀ CUNG CẤP";
+            this.label_tittlePage.AutoSize = true;
+            this.transition.SetDecoration(this.label_tittlePage, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.label_tittlePage.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_tittlePage.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label_tittlePage.Location = new System.Drawing.Point(11, 15);
+            this.label_tittlePage.Name = "label_tittlePage";
+            this.label_tittlePage.Size = new System.Drawing.Size(175, 31);
+            this.label_tittlePage.TabIndex = 0;
+            this.label_tittlePage.Text = "NHÀ CUNG CẤP";
             // 
-            // panel1
+            // panel_tittle
             // 
-            this.panel1.AllowDrop = true;
-            this.panel1.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.panel1.Controls.Add(this.label1);
-            this.transition.SetDecoration(this.panel1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(180, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(749, 57);
-            this.panel1.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.transition.SetDecoration(this.label2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.label2.Location = new System.Drawing.Point(12, 465);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 16);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "#develop_by_giatoc";
+            this.panel_tittle.AllowDrop = true;
+            this.panel_tittle.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel_tittle.Controls.Add(this.label_tittlePage);
+            this.transition.SetDecoration(this.panel_tittle, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panel_tittle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_tittle.Location = new System.Drawing.Point(180, 0);
+            this.panel_tittle.Name = "panel_tittle";
+            this.panel_tittle.Size = new System.Drawing.Size(749, 57);
+            this.panel_tittle.TabIndex = 1;
             // 
             // Form1
             // 
@@ -188,9 +188,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(929, 499);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.guna2Panel1);
+            this.Controls.Add(this.panel_pageHolder);
+            this.Controls.Add(this.panel_tittle);
+            this.Controls.Add(this.Gpanel_slideBar);
             this.transition.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.IsMdiContainer = true;
             this.Name = "Form1";
@@ -198,25 +198,25 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QUẢN LÝ NHÀ CUNG CẤP";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.Gpanel_slideBar.ResumeLayout(false);
+            this.Gpanel_slideBar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gImage_SignIcon)).EndInit();
+            this.panel_tittle.ResumeLayout(false);
+            this.panel_tittle.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel2;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
+        private System.Windows.Forms.Panel panel_pageHolder;
+        private Guna.UI2.WinForms.Guna2Panel Gpanel_slideBar;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox gImage_SignIcon;
         private Guna.UI2.WinForms.Guna2GradientButton spBtn;
         private Guna.UI2.WinForms.Guna2GradientButton nccBtn;
         private Guna.UI2.WinForms.Guna2Transition transition;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label_tittlePage;
+        private System.Windows.Forms.Panel panel_tittle;
+        private System.Windows.Forms.Label label_sign;
     }
 }

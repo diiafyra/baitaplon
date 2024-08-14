@@ -32,34 +32,34 @@ namespace baitaplon
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.button5 = new Guna.UI2.WinForms.Guna2Button();
-            this.button6 = new Guna.UI2.WinForms.Guna2Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dgv_Supplier = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.txt_phone = new System.Windows.Forms.TextBox();
+            this.txt_nameSupplier = new System.Windows.Forms.TextBox();
+            this.txt_Score = new System.Windows.Forms.TextBox();
+            this.txt_timeDelivery = new System.Windows.Forms.TextBox();
+            this.txt_address = new System.Windows.Forms.TextBox();
+            this.label_nameSupplier = new System.Windows.Forms.Label();
+            this.label_phone = new System.Windows.Forms.Label();
+            this.label_address = new System.Windows.Forms.Label();
+            this.label_score = new System.Windows.Forms.Label();
+            this.label_timeDelivery = new System.Windows.Forms.Label();
+            this.label_note = new System.Windows.Forms.Label();
+            this.txt_note = new System.Windows.Forms.TextBox();
+            this.btn_add = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_edit = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_delete = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Clear = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_search = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_refresh = new Guna.UI2.WinForms.Guna2Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Supplier)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgv_Supplier
             // 
-            this.dataGridView1.AllowDrop = true;
+            this.dgv_Supplier.AllowDrop = true;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgv_Supplier.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_Supplier.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -69,8 +69,8 @@ namespace baitaplon
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Supplier.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_Supplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -78,275 +78,275 @@ namespace baitaplon
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dataGridView1.Location = new System.Drawing.Point(26, 274);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(744, 150);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-            this.dataGridView1.ThemeStyle.ReadOnly = false;
-            this.dataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dataGridView1.ThemeStyle.RowsStyle.Height = 24;
-            this.dataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            this.dataGridView1.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellEnter_1);
-            this.dataGridView1.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseDoubleClick);
+            this.dgv_Supplier.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgv_Supplier.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgv_Supplier.Location = new System.Drawing.Point(26, 274);
+            this.dgv_Supplier.Name = "dgv_Supplier";
+            this.dgv_Supplier.RowHeadersVisible = false;
+            this.dgv_Supplier.RowHeadersWidth = 51;
+            this.dgv_Supplier.RowTemplate.Height = 24;
+            this.dgv_Supplier.Size = new System.Drawing.Size(744, 150);
+            this.dgv_Supplier.TabIndex = 0;
+            this.dgv_Supplier.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_Supplier.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgv_Supplier.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgv_Supplier.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgv_Supplier.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgv_Supplier.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_Supplier.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgv_Supplier.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dgv_Supplier.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgv_Supplier.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_Supplier.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgv_Supplier.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Supplier.ThemeStyle.HeaderStyle.Height = 4;
+            this.dgv_Supplier.ThemeStyle.ReadOnly = false;
+            this.dgv_Supplier.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_Supplier.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgv_Supplier.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_Supplier.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgv_Supplier.ThemeStyle.RowsStyle.Height = 24;
+            this.dgv_Supplier.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgv_Supplier.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgv_Supplier.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dgv_Supplier.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellEnter_1);
+            this.dgv_Supplier.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseDoubleClick);
             // 
-            // textBox1
+            // txt_phone
             // 
-            this.textBox1.AllowDrop = true;
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txt_phone.AllowDrop = true;
+            this.txt_phone.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox1.Location = new System.Drawing.Point(185, 73);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(319, 22);
-            this.textBox1.TabIndex = 1;
+            this.txt_phone.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txt_phone.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txt_phone.Location = new System.Drawing.Point(185, 73);
+            this.txt_phone.Name = "txt_phone";
+            this.txt_phone.Size = new System.Drawing.Size(319, 22);
+            this.txt_phone.TabIndex = 1;
             // 
-            // textBox2
+            // txt_nameSupplier
             // 
-            this.textBox2.AllowDrop = true;
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txt_nameSupplier.AllowDrop = true;
+            this.txt_nameSupplier.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox2.Location = new System.Drawing.Point(185, 31);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(585, 22);
-            this.textBox2.TabIndex = 2;
+            this.txt_nameSupplier.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txt_nameSupplier.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txt_nameSupplier.Location = new System.Drawing.Point(185, 31);
+            this.txt_nameSupplier.Name = "txt_nameSupplier";
+            this.txt_nameSupplier.Size = new System.Drawing.Size(585, 22);
+            this.txt_nameSupplier.TabIndex = 2;
             // 
-            // textBox3
+            // txt_Score
             // 
-            this.textBox3.AllowDrop = true;
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txt_Score.AllowDrop = true;
+            this.txt_Score.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox3.Location = new System.Drawing.Point(617, 73);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(153, 22);
-            this.textBox3.TabIndex = 3;
+            this.txt_Score.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txt_Score.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txt_Score.Location = new System.Drawing.Point(617, 73);
+            this.txt_Score.Name = "txt_Score";
+            this.txt_Score.Size = new System.Drawing.Size(153, 22);
+            this.txt_Score.TabIndex = 3;
             // 
-            // textBox4
+            // txt_timeDelivery
             // 
-            this.textBox4.AllowDrop = true;
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txt_timeDelivery.AllowDrop = true;
+            this.txt_timeDelivery.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox4.Location = new System.Drawing.Point(185, 152);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(585, 22);
-            this.textBox4.TabIndex = 4;
+            this.txt_timeDelivery.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txt_timeDelivery.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txt_timeDelivery.Location = new System.Drawing.Point(185, 152);
+            this.txt_timeDelivery.Name = "txt_timeDelivery";
+            this.txt_timeDelivery.Size = new System.Drawing.Size(585, 22);
+            this.txt_timeDelivery.TabIndex = 4;
             // 
-            // textBox5
+            // txt_address
             // 
-            this.textBox5.AllowDrop = true;
-            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txt_address.AllowDrop = true;
+            this.txt_address.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox5.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox5.Location = new System.Drawing.Point(185, 113);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(585, 22);
-            this.textBox5.TabIndex = 5;
+            this.txt_address.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txt_address.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txt_address.Location = new System.Drawing.Point(185, 113);
+            this.txt_address.Name = "txt_address";
+            this.txt_address.Size = new System.Drawing.Size(585, 22);
+            this.txt_address.TabIndex = 5;
             // 
-            // label1
+            // label_nameSupplier
             // 
-            this.label1.AllowDrop = true;
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label_nameSupplier.AllowDrop = true;
+            this.label_nameSupplier.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(23, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 16);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "TÊN NHÀ CUNG CẤP";
+            this.label_nameSupplier.AutoSize = true;
+            this.label_nameSupplier.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label_nameSupplier.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_nameSupplier.Location = new System.Drawing.Point(23, 34);
+            this.label_nameSupplier.Name = "label_nameSupplier";
+            this.label_nameSupplier.Size = new System.Drawing.Size(139, 16);
+            this.label_nameSupplier.TabIndex = 6;
+            this.label_nameSupplier.Text = "TÊN NHÀ CUNG CẤP";
             // 
-            // label2
+            // label_phone
             // 
-            this.label2.AllowDrop = true;
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label_phone.AllowDrop = true;
+            this.label_phone.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(23, 76);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 16);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "SỐ ĐIỆN THOẠI";
+            this.label_phone.AutoSize = true;
+            this.label_phone.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label_phone.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_phone.Location = new System.Drawing.Point(23, 76);
+            this.label_phone.Name = "label_phone";
+            this.label_phone.Size = new System.Drawing.Size(104, 16);
+            this.label_phone.TabIndex = 7;
+            this.label_phone.Text = "SỐ ĐIỆN THOẠI";
             // 
-            // label3
+            // label_address
             // 
-            this.label3.AllowDrop = true;
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label_address.AllowDrop = true;
+            this.label_address.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(23, 113);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 16);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "ĐỊA CHỈ";
+            this.label_address.AutoSize = true;
+            this.label_address.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_address.Location = new System.Drawing.Point(23, 113);
+            this.label_address.Name = "label_address";
+            this.label_address.Size = new System.Drawing.Size(53, 16);
+            this.label_address.TabIndex = 8;
+            this.label_address.Text = "ĐỊA CHỈ";
             // 
-            // label4
+            // label_score
             // 
-            this.label4.AllowDrop = true;
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label_score.AllowDrop = true;
+            this.label_score.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(514, 77);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 16);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "ĐIỂM UY TÍN";
+            this.label_score.AutoSize = true;
+            this.label_score.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_score.Location = new System.Drawing.Point(514, 77);
+            this.label_score.Name = "label_score";
+            this.label_score.Size = new System.Drawing.Size(86, 16);
+            this.label_score.TabIndex = 9;
+            this.label_score.Text = "ĐIỂM UY TÍN";
             // 
-            // label5
+            // label_timeDelivery
             // 
-            this.label5.AllowDrop = true;
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label_timeDelivery.AllowDrop = true;
+            this.label_timeDelivery.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(23, 155);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(109, 16);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "THỜI GIAN GIAO";
+            this.label_timeDelivery.AutoSize = true;
+            this.label_timeDelivery.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_timeDelivery.Location = new System.Drawing.Point(23, 155);
+            this.label_timeDelivery.Name = "label_timeDelivery";
+            this.label_timeDelivery.Size = new System.Drawing.Size(109, 16);
+            this.label_timeDelivery.TabIndex = 10;
+            this.label_timeDelivery.Text = "THỜI GIAN GIAO";
             // 
-            // label6
+            // label_note
             // 
-            this.label6.AllowDrop = true;
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label_note.AllowDrop = true;
+            this.label_note.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(23, 191);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(62, 16);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "GHI CHÚ";
+            this.label_note.AutoSize = true;
+            this.label_note.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_note.Location = new System.Drawing.Point(23, 191);
+            this.label_note.Name = "label_note";
+            this.label_note.Size = new System.Drawing.Size(62, 16);
+            this.label_note.TabIndex = 11;
+            this.label_note.Text = "GHI CHÚ";
             // 
-            // textBox6
+            // txt_note
             // 
-            this.textBox6.AllowDrop = true;
-            this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txt_note.AllowDrop = true;
+            this.txt_note.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox6.Location = new System.Drawing.Point(185, 191);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(585, 22);
-            this.textBox6.TabIndex = 12;
+            this.txt_note.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txt_note.Location = new System.Drawing.Point(185, 191);
+            this.txt_note.Name = "txt_note";
+            this.txt_note.Size = new System.Drawing.Size(585, 22);
+            this.txt_note.TabIndex = 12;
             // 
-            // button1
+            // btn_add
             // 
-            this.button1.AllowDrop = true;
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(689, 231);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(81, 23);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "THÊM";
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_add.AllowDrop = true;
+            this.btn_add.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_add.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_add.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_add.Location = new System.Drawing.Point(689, 231);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.Size = new System.Drawing.Size(81, 23);
+            this.btn_add.TabIndex = 13;
+            this.btn_add.Text = "THÊM";
+            this.btn_add.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btn_edit
             // 
-            this.button2.AllowDrop = true;
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(608, 231);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "SỬA";
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btn_edit.AllowDrop = true;
+            this.btn_edit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_edit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_edit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_edit.Location = new System.Drawing.Point(608, 231);
+            this.btn_edit.Name = "btn_edit";
+            this.btn_edit.Size = new System.Drawing.Size(75, 23);
+            this.btn_edit.TabIndex = 14;
+            this.btn_edit.Text = "SỬA";
+            this.btn_edit.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // btn_delete
             // 
-            this.button3.AllowDrop = true;
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button3.Location = new System.Drawing.Point(527, 231);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "XÓA";
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btn_delete.AllowDrop = true;
+            this.btn_delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_delete.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_delete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_delete.Location = new System.Drawing.Point(527, 231);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.Size = new System.Drawing.Size(75, 23);
+            this.btn_delete.TabIndex = 15;
+            this.btn_delete.Text = "XÓA";
+            this.btn_delete.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // btn_Clear
             // 
-            this.button4.AllowDrop = true;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button4.Location = new System.Drawing.Point(133, 231);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(101, 23);
-            this.button4.TabIndex = 16;
-            this.button4.Text = "LÀM RỖNG";
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btn_Clear.AllowDrop = true;
+            this.btn_Clear.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Clear.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_Clear.Location = new System.Drawing.Point(133, 231);
+            this.btn_Clear.Name = "btn_Clear";
+            this.btn_Clear.Size = new System.Drawing.Size(101, 23);
+            this.btn_Clear.TabIndex = 16;
+            this.btn_Clear.Text = "CLEAR";
+            this.btn_Clear.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button5
+            // btn_search
             // 
-            this.button5.AllowDrop = true;
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button5.Location = new System.Drawing.Point(26, 231);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(101, 23);
-            this.button5.TabIndex = 17;
-            this.button5.Text = "TÌM KIẾM";
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btn_search.AllowDrop = true;
+            this.btn_search.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_search.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_search.Location = new System.Drawing.Point(26, 231);
+            this.btn_search.Name = "btn_search";
+            this.btn_search.Size = new System.Drawing.Size(101, 23);
+            this.btn_search.TabIndex = 17;
+            this.btn_search.Text = "TÌM KIẾM";
+            this.btn_search.Click += new System.EventHandler(this.button5_Click);
             // 
-            // button6
+            // btn_refresh
             // 
-            this.button6.AllowDrop = true;
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.button6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button6.Location = new System.Drawing.Point(240, 231);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(101, 23);
-            this.button6.TabIndex = 18;
-            this.button6.Text = "REFRESH";
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.btn_refresh.AllowDrop = true;
+            this.btn_refresh.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_refresh.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_refresh.Location = new System.Drawing.Point(240, 231);
+            this.btn_refresh.Name = "btn_refresh";
+            this.btn_refresh.Size = new System.Drawing.Size(101, 23);
+            this.btn_refresh.TabIndex = 18;
+            this.btn_refresh.Text = "REFRESH";
+            this.btn_refresh.Click += new System.EventHandler(this.button6_Click);
             // 
             // PAGE1
             // 
@@ -354,30 +354,30 @@ namespace baitaplon
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btn_refresh);
+            this.Controls.Add(this.btn_search);
+            this.Controls.Add(this.btn_Clear);
+            this.Controls.Add(this.btn_delete);
+            this.Controls.Add(this.btn_edit);
+            this.Controls.Add(this.btn_add);
+            this.Controls.Add(this.txt_note);
+            this.Controls.Add(this.label_note);
+            this.Controls.Add(this.label_timeDelivery);
+            this.Controls.Add(this.label_score);
+            this.Controls.Add(this.label_address);
+            this.Controls.Add(this.label_phone);
+            this.Controls.Add(this.label_nameSupplier);
+            this.Controls.Add(this.txt_address);
+            this.Controls.Add(this.txt_timeDelivery);
+            this.Controls.Add(this.txt_Score);
+            this.Controls.Add(this.txt_nameSupplier);
+            this.Controls.Add(this.txt_phone);
+            this.Controls.Add(this.dgv_Supplier);
             this.ForeColor = System.Drawing.Color.DarkBlue;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PAGE1";
             this.Text = "Form2";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Supplier)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -385,24 +385,24 @@ namespace baitaplon
 
         #endregion
 
-        public Guna2DataGridView dataGridView1;
-        public System.Windows.Forms.TextBox textBox1;
-        public System.Windows.Forms.TextBox textBox2;
-        public System.Windows.Forms.TextBox textBox3;
-        public System.Windows.Forms.TextBox textBox4;
-        public System.Windows.Forms.TextBox textBox5;
-        public System.Windows.Forms.Label label1;
-        public System.Windows.Forms.Label label2;
-        public System.Windows.Forms.Label label3;
-        public System.Windows.Forms.Label label4;
-        public System.Windows.Forms.Label label5;
-        public System.Windows.Forms.Label label6;
-        public System.Windows.Forms.TextBox textBox6;
-        public Guna2Button button1;
-        public Guna2Button button2;
-        public Guna2Button button3;
-        public Guna2Button button4;
-        public Guna2Button button5;
-        public Guna2Button button6;
+        public Guna2DataGridView dgv_Supplier;
+        public System.Windows.Forms.TextBox txt_phone;
+        public System.Windows.Forms.TextBox txt_nameSupplier;
+        public System.Windows.Forms.TextBox txt_Score;
+        public System.Windows.Forms.TextBox txt_timeDelivery;
+        public System.Windows.Forms.TextBox txt_address;
+        public System.Windows.Forms.Label label_nameSupplier;
+        public System.Windows.Forms.Label label_phone;
+        public System.Windows.Forms.Label label_address;
+        public System.Windows.Forms.Label label_score;
+        public System.Windows.Forms.Label label_timeDelivery;
+        public System.Windows.Forms.Label label_note;
+        public System.Windows.Forms.TextBox txt_note;
+        public Guna2Button btn_add;
+        public Guna2Button btn_edit;
+        public Guna2Button btn_delete;
+        public Guna2Button btn_Clear;
+        public Guna2Button btn_search;
+        public Guna2Button btn_refresh;
     }
 }

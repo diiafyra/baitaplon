@@ -16,7 +16,7 @@ namespace baitaplon
         {
             InitializeComponent();
             LoadData();
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgv_Supplier.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -28,12 +28,12 @@ namespace baitaplon
             // Chuẩn bị câu truy vấn SQL
             string query = "INSERT INTO NhaCungCaps VALUES (@value1, @value2, @value3, @value4, @value5, @value6)";
             SqlCommand command = new SqlCommand(query, connection);
-            command.Parameters.AddWithValue("@value1", textBox2.Text);
-            command.Parameters.AddWithValue("@value2", textBox1.Text);
-            command.Parameters.AddWithValue("@value3", textBox5.Text);
-            command.Parameters.AddWithValue("@value4", textBox4.Text);
-            command.Parameters.AddWithValue("@value5", textBox6.Text);
-            command.Parameters.AddWithValue("@value6", textBox3.Text);
+            command.Parameters.AddWithValue("@value1", txt_nameSupplier.Text);
+            command.Parameters.AddWithValue("@value2", txt_phone.Text);
+            command.Parameters.AddWithValue("@value3", txt_address.Text);
+            command.Parameters.AddWithValue("@value4", txt_timeDelivery.Text);
+            command.Parameters.AddWithValue("@value5", txt_note.Text);
+            command.Parameters.AddWithValue("@value6", txt_Score.Text);
             try
             {
                 connection.Open();
@@ -45,7 +45,7 @@ namespace baitaplon
                     DataTable dataTable = new DataTable();
                     SqlDataAdapter dataAdapter = new SqlDataAdapter(selectCommand);
                     dataAdapter.Fill(dataTable);
-                    dataGridView1.DataSource = dataTable;
+                    dgv_Supplier.DataSource = dataTable;
                 }
             }
             catch (SqlException ex)
@@ -60,20 +60,20 @@ namespace baitaplon
             {
                 var nhaCungCaps = btlcontext.NhaCungCap.ToList();
 
-                dataGridView1.DataSource = nhaCungCaps;
+                dgv_Supplier.DataSource = nhaCungCaps;
 
-                dataGridView1.Columns["Id"].HeaderText = "ID";
-                dataGridView1.Columns["TenNhaCungCap"].HeaderText = "Tên Nhà Cung Cấp";
-                dataGridView1.Columns["SoDienThoai"].HeaderText = "Số Điện Thoại";
-                dataGridView1.Columns["DiaChi"].HeaderText = "Địa Chỉ";
-                dataGridView1.Columns["ThoiGianGiao"].HeaderText = "Thời Gian Giao";
-                dataGridView1.Columns["DiemUyTin"].HeaderText = "Điểm Uy Tín";
-                dataGridView1.Columns["GhiChu"].HeaderText = "Ghi Chú";
+                dgv_Supplier.Columns["Id"].HeaderText = "ID";
+                dgv_Supplier.Columns["TenNhaCungCap"].HeaderText = "Tên Nhà Cung Cấp";
+                dgv_Supplier.Columns["SoDienThoai"].HeaderText = "Số Điện Thoại";
+                dgv_Supplier.Columns["DiaChi"].HeaderText = "Địa Chỉ";
+                dgv_Supplier.Columns["ThoiGianGiao"].HeaderText = "Thời Gian Giao";
+                dgv_Supplier.Columns["DiemUyTin"].HeaderText = "Điểm Uy Tín";
+                dgv_Supplier.Columns["GhiChu"].HeaderText = "Ghi Chú";
 
                 // Ẩn cột SanPhams
-                if (dataGridView1.Columns["SanPhams"] != null)
+                if (dgv_Supplier.Columns["SanPhams"] != null)
                 {
-                    dataGridView1.Columns["SanPhams"].Visible = false;
+                    dgv_Supplier.Columns["SanPhams"].Visible = false;
                 }
             } 
 
@@ -84,15 +84,15 @@ namespace baitaplon
         {
             if (selectedRowIndex >= 0)
             {
-                int rowIndex = dataGridView1.CurrentCell.RowIndex;
-                int id = Convert.ToInt32(dataGridView1.Rows[rowIndex].Cells["Id"].Value);
+                int rowIndex = dgv_Supplier.CurrentCell.RowIndex;
+                int id = Convert.ToInt32(dgv_Supplier.Rows[rowIndex].Cells["Id"].Value);
 
-                string name = textBox2.Text;
-                string phone = textBox1.Text;
-                string address = textBox5.Text;
-                string note = textBox6.Text;
-                decimal dtime = decimal.Parse(textBox4.Text);
-                decimal score = decimal.Parse(textBox3.Text);
+                string name = txt_nameSupplier.Text;
+                string phone = txt_phone.Text;
+                string address = txt_address.Text;
+                string note = txt_note.Text;
+                decimal dtime = decimal.Parse(txt_timeDelivery.Text);
+                decimal score = decimal.Parse(txt_Score.Text);
 
                 UpdateProduceInfo(id, name, phone, address, dtime, score, note);
                 LoadData();
@@ -132,12 +132,12 @@ namespace baitaplon
 
         private void button4_Click(object sender, EventArgs e)
         {
-            textBox1.Text = string.Empty;
-            textBox2.Text = string.Empty;
-            textBox3.Text = string.Empty;
-            textBox4.Text = string.Empty;
-            textBox5.Text = string.Empty;
-            textBox6.Text = string.Empty;
+            txt_phone.Text = string.Empty;
+            txt_nameSupplier.Text = string.Empty;
+            txt_Score.Text = string.Empty;
+            txt_timeDelivery.Text = string.Empty;
+            txt_address.Text = string.Empty;
+            txt_note.Text = string.Empty;
         }
 
 
@@ -150,8 +150,8 @@ namespace baitaplon
 
                 if (result == DialogResult.Yes)
                 {
-                    int rowIndex = dataGridView1.CurrentCell.RowIndex;
-                    int id = Convert.ToInt32(dataGridView1.Rows[rowIndex].Cells["Id"].Value);
+                    int rowIndex = dgv_Supplier.CurrentCell.RowIndex;
+                    int id = Convert.ToInt32(dgv_Supplier.Rows[rowIndex].Cells["Id"].Value);
                     DeleteProduce(id);
                     LoadData();
                 }
@@ -202,14 +202,14 @@ namespace baitaplon
         {
             if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
             {
-                var selectedRow = dataGridView1.Rows[e.RowIndex];
+                var selectedRow = dgv_Supplier.Rows[e.RowIndex];
 
-                textBox2.Text = selectedRow.Cells["TenNhaCungCap"].Value?.ToString() ?? string.Empty;
-                textBox1.Text = selectedRow.Cells["SoDienThoai"].Value?.ToString() ?? string.Empty;
-                textBox5.Text = selectedRow.Cells["DiaChi"].Value?.ToString() ?? string.Empty;
-                textBox4.Text = selectedRow.Cells["ThoiGianGiao"].Value?.ToString() ?? string.Empty;
-                textBox3.Text = selectedRow.Cells["DiemUyTin"].Value?.ToString() ?? string.Empty;
-                textBox6.Text = selectedRow.Cells["GhiChu"].Value?.ToString() ?? string.Empty;
+                txt_nameSupplier.Text = selectedRow.Cells["TenNhaCungCap"].Value?.ToString() ?? string.Empty;
+                txt_phone.Text = selectedRow.Cells["SoDienThoai"].Value?.ToString() ?? string.Empty;
+                txt_address.Text = selectedRow.Cells["DiaChi"].Value?.ToString() ?? string.Empty;
+                txt_timeDelivery.Text = selectedRow.Cells["ThoiGianGiao"].Value?.ToString() ?? string.Empty;
+                txt_Score.Text = selectedRow.Cells["DiemUyTin"].Value?.ToString() ?? string.Empty;
+                txt_note.Text = selectedRow.Cells["GhiChu"].Value?.ToString() ?? string.Empty;
             }
         }
 
@@ -217,9 +217,9 @@ namespace baitaplon
         {
             if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
             {
-                var selectedRow = dataGridView1.Rows[e.RowIndex];
+                var selectedRow = dgv_Supplier.Rows[e.RowIndex];
                 //MessageBox.Show("baaaaaaaaaa");
-                ParentForm.ActivateButtonA(textBox2.Text = selectedRow.Cells["Id"].Value?.ToString() ?? string.Empty);
+                ParentForm.ActivateButtonA(txt_nameSupplier.Text = selectedRow.Cells["Id"].Value?.ToString() ?? string.Empty);
 
             }
         }
@@ -229,12 +229,12 @@ namespace baitaplon
             using (var context = new btlcontext())
             {
 
-                string tenNhaCungCap = textBox2.Text.Trim();
-                string soDienThoai = textBox1.Text.Trim();
-                string diaChi = textBox5.Text.Trim();
-                decimal? thoiGianGiao = string.IsNullOrWhiteSpace(textBox4.Text) ? (decimal?)null : decimal.Parse(textBox4.Text);
-                string ghiChu = textBox6.Text.Trim();
-                decimal? diemUyTin = string.IsNullOrWhiteSpace(textBox3.Text) ? (decimal?)null : decimal.Parse(textBox3.Text);
+                string tenNhaCungCap = txt_nameSupplier.Text.Trim();
+                string soDienThoai = txt_phone.Text.Trim();
+                string diaChi = txt_address.Text.Trim();
+                decimal? thoiGianGiao = string.IsNullOrWhiteSpace(txt_timeDelivery.Text) ? (decimal?)null : decimal.Parse(txt_timeDelivery.Text);
+                string ghiChu = txt_note.Text.Trim();
+                decimal? diemUyTin = string.IsNullOrWhiteSpace(txt_Score.Text) ? (decimal?)null : decimal.Parse(txt_Score.Text);
 
 
                 var query = context.NhaCungCap.AsQueryable();
@@ -270,7 +270,7 @@ namespace baitaplon
                 }
 
                 var resultList = query.ToList();
-                dataGridView1.DataSource = resultList;
+                dgv_Supplier.DataSource = resultList;
             }   
         }
 
